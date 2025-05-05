@@ -1,0 +1,11 @@
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\FirstApiProject.exe
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\appsettings.Development.json
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\appsettings.json
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\FirstApiProject.dll
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\FirstApiProject.deps.json
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\FirstApiProject.runtimeconfig.json
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\FirstApiProject.pdb
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Arjun Training\FirstApiProject\obj\Debug\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

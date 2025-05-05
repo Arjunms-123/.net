@@ -1,0 +1,14 @@
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\obj\Debug\net8.0-windows7.0\MyConsoleapp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\obj\Debug\net8.0-windows7.0\MyConsoleapp.AssemblyInfoInputs.cache
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\obj\Debug\net8.0-windows7.0\MyConsoleapp.AssemblyInfo.cs
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\obj\Debug\net8.0-windows7.0\MyConsoleapp.csproj.CoreCompileInputs.cache
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\bin\Debug\net8.0-windows7.0\MyConsoleapp.exe
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\bin\Debug\net8.0-windows7.0\MyConsoleapp.deps.json
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\bin\Debug\net8.0-windows7.0\MyConsoleapp.runtimeconfig.json
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\bin\Debug\net8.0-windows7.0\MyConsoleapp.dll
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\bin\Debug\net8.0-windows7.0\MyConsoleapp.pdb
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\obj\Debug\net8.0-windows7.0\MyConsoleapp.dll
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\obj\Debug\net8.0-windows7.0\refint\MyConsoleapp.dll
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\obj\Debug\net8.0-windows7.0\MyConsoleapp.pdb
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\obj\Debug\net8.0-windows7.0\MyConsoleapp.genruntimeconfig.cache
+D:\Arjun Training\MyConsoleapp\MyConsoleapp\obj\Debug\net8.0-windows7.0\ref\MyConsoleapp.dll

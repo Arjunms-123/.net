@@ -1,0 +1,74 @@
+ASP.NET Web Forms and ASP.NET Core are both frameworks for building web applications, but they have significant differences in architecture, design philosophy, and capabilities. Here’s a comparison of the two:
+1. Framework Type
+
+    ASP.NET Web Forms:
+        A part of the .NET Framework, which is primarily designed for building web applications using a drag-and-drop interface and an event-driven model.
+        It is tightly coupled with Windows and IIS (Internet Information Services).
+
+    ASP.NET Core:
+        A cross-platform, open-source framework that is designed to build modern web applications and APIs.
+        It is modular and can run on Windows, macOS, and Linux, making it more versatile.
+
+2. Architecture
+
+    ASP.NET Web Forms:
+        Uses a page-based architecture where each page is a separate entity, and the state is managed through ViewState.
+        The framework abstracts much of the HTTP protocol, which can lead to less control over the HTML and HTTP requests.
+
+    ASP.NET Core:
+        Follows a more modern, lightweight architecture based on middleware, allowing developers to have fine-grained control over the request pipeline.
+        Encourages the use of MVC (Model-View-Controller) or Razor Pages, promoting separation of concerns and better organization of code.
+
+3. Development Model
+
+    ASP.NET Web Forms:
+        Primarily event-driven, where user interactions trigger server-side events.
+        Uses server controls that encapsulate HTML and behavior, which can lead to a more complex rendering process.
+
+    ASP.NET Core:
+        Supports a more flexible development model, including MVC, Razor Pages, and Web APIs.
+        Encourages the use of client-side frameworks and libraries, allowing for a more responsive and interactive user experience.
+
+4. State Management
+
+    ASP.NET Web Forms:
+        Relies heavily on ViewState to maintain the state of controls between postbacks, which can lead to increased page size and performance issues.
+
+    ASP.NET Core:
+        Does not use ViewState. Instead, it encourages statelessness and provides various options for state management, such as session state, cookies, and caching.
+
+5. Performance
+
+    ASP.NET Web Forms:
+        Generally slower due to the overhead of ViewState and the page lifecycle model.
+
+    ASP.NET Core:
+        Designed for high performance and scalability. It has a lightweight architecture and is optimized for modern web development.
+
+6. Cross-Platform Support
+
+    ASP.NET Web Forms:
+        Limited to Windows environments and requires IIS for hosting.
+
+    ASP.NET Core:
+        Fully cross-platform, allowing applications to run on Windows, macOS, and Linux. It can be hosted on various servers, including Kestrel, Nginx, and Apache.
+
+7. Dependency Injection
+
+    ASP.NET Web Forms:
+        Does not have built-in support for dependency injection, which can make testing and managing dependencies more challenging.
+
+    ASP.NET Core:
+        Has built-in support for dependency injection, making it easier to manage dependencies and improve testability.
+
+8. Community and Ecosystem
+
+    ASP.NET Web Forms:
+        While still supported, it is considered a legacy technology, and the community is moving towards newer frameworks.
+
+    ASP.NET Core:
+        Actively developed and supported by Microsoft, with a growing community and ecosystem. It is the recommended framework for new web applications.
+
+Conclusion
+
+In summary, ASP.NET Web Forms is a mature framework suitable for certain types of applications, especially those that require rapid development with a familiar event-driven model. However, ASP.NET Core is the modern, flexible, and high-performance framework that is recommended for new web applications, offering cross-platform support, better performance, and a more modular architecture. If you're starting a new project, ASP.NET Core is generally the better choice.
