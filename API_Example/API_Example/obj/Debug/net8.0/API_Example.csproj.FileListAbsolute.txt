@@ -62,3 +62,4 @@ D:\ArjunTraining\API_Example\API_Example\bin\Debug\net8.0\runtimes\win-x64\nativ
 D:\ArjunTraining\API_Example\API_Example\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
 D:\ArjunTraining\API_Example\API_Example\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
 D:\ArjunTraining\API_Example\API_Example\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+D:\ArjunTraining\API_Example\API_Example\obj\Debug\net8.0\API_Example.sourcelink.json

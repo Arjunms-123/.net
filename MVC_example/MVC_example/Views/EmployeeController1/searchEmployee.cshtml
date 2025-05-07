@@ -1,0 +1,165 @@
+﻿@{
+	ViewData["Title"] = "viewEmployeeReport";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>View Employee Report</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			padding: 20px;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin: 20px 0;
+			background-color: #fff;
+		}
+
+		th, td {
+			padding: 10px;
+			text-align: left;
+			border: 1px solid #ddd;
+		}
+
+		th {
+			background-color: #007BFF;
+			color: white;
+		}
+
+		input[type="text"] {
+			width: 100%;
+			padding: 8px;
+			box-sizing: border-box; /* Ensures padding is included in width */
+		}
+
+		.employee-details {
+			margin-top: 20px;
+			background-color: #fff;
+			padding: 15px;
+			border: 1px solid #ddd;
+		}
+
+		label {
+			display: block;
+			margin: 10px 0 5px;
+		}
+	</style>
+</head>
+<body>
+
+	<h2>Select Employee</h2>
+	<select id="employeeDropdown" onchange="showEmployeeDetails()">
+		<option value="">Select an employee</option>
+		<!-- Options will be dynamically added here -->
+	</select>
+
+	<div class="employee-details" id="employeeDetails" style="display: none;">
+		<label for="empId">ID:</label>
+		<input type="text" id="empId" readonly>
+
+		<label for="empName">Name:</label>
+		<input type="text" id="empName" readonly>
+
+		<label for="empDesignation">Designation:</label>
+		<input type="text" id="empDesignation" readonly>
+
+		<label for="empDepartment">Department:</label>
+		<input type="text" id="empDepartment" readonly>
+	</div>
+
+	<table id="reportTable">
+		<thead>
+			<!-- Headers will be dynamically added here -->
+		</thead>
+		<tbody>
+			<!-- Rows will be dynamically added here -->
+		</tbody>
+	</table>
+
+	<script>
+		window.onload = function () {
+			viewreport();
+		};
+
+		function viewreport() {
+			fetchapiGet();
+		}
+
+		function fetchapiGet() {
+			var flag = "GetAllempdetailsrepo";
+			$.ajax({
+				type: "GET",
+				url: '/EmployeeController1/getAPIData',
+				data: { datas: flag },
+				async: false,
+				success: function (response) {
+					var data = JSON.parse(response);
+					LoadDropdown(data);
+				},
+				error: function (response) {
+					console.error("Error fetching data:", response);
+				}
+			});
+		}
+
+		function LoadDropdown(data) {
+			const dropdown = document.getElementById('employeeDropdown');
+
+			// Clear existing options
+			dropdown.innerHTML = '<option value="">Select an employee</option>';
+
+			// Check if data is valid
+			if (Array.isArray(data) && data.length > 0) {
+				// Populate the dropdown with new options
+				data.forEach(item => {
+					const option = document.createElement('option');
+					option.value = item.id; // Assuming each item has a unique 'id'
+					option.textContent = item.name; // Assuming each item has a 'name' property
+					dropdown.appendChild(option);
+				});
+			}
+		}
+
+		function showEmployeeDetails() {
+			const dropdown = document.getElementById('employeeDropdown');
+			const selectedId = dropdown.value;
+			const employeeDetailsDiv = document.getElementById('employeeDetails');
+
+			if (selectedId) {
+				// Fetch the employee details based on the selected ID
+				fetchapiGetEmployeeDetails(selectedId);
+				employeeDetailsDiv.style.display = 'block'; // Show the details div
+			} else {
+				employeeDetailsDiv.style.display = 'none'; // Hide the details div
+			}
+		}
+
+		function fetchapiGetEmployeeDetails(id) {
+			$.ajax({
+				type: "GET",
+				url: '/EmployeeController1/getEmployeeDetails', // Adjust the URL as needed
+				data: { id: id },                success: function (response) {
+					var employeeData = JSON.parse(response);
+					// Assuming employeeData has properties: id, name, designation, department
+					document.getElementById('empId').value = employeeData.id || '';
+					document.getElementById('empName').value = employeeData.name || '';
+					document.getElementById('empDesignation').value = employeeData.designation || '';
+					document.getElementById('empDepartment').value = employeeData.department || '';
+				},
+				error: function (response) {
+					console.error("Error fetching employee details:", response);
+				}
+			});
+		}
+	</script>
+</body>
+</html>
+

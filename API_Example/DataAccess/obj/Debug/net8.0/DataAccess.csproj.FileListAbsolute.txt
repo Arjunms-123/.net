@@ -10,3 +10,4 @@ D:\ArjunTraining\API_Example\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
 D:\ArjunTraining\API_Example\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 D:\ArjunTraining\API_Example\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
 D:\ArjunTraining\API_Example\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\ArjunTraining\API_Example\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json

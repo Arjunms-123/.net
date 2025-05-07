@@ -12,7 +12,7 @@ namespace DataAccess.Repository
 {
     public class EmployeeRepo:ControllerBase
     {
-
+         
         public async Task<dynamic> GetnameRepo(string name)
         {
             var res = "My name is" + name;

@@ -13,3 +13,4 @@ D:\ArjunTraining\API_Example\Business\obj\Debug\net8.0\Business.dll
 D:\ArjunTraining\API_Example\Business\obj\Debug\net8.0\refint\Business.dll
 D:\ArjunTraining\API_Example\Business\obj\Debug\net8.0\Business.pdb
 D:\ArjunTraining\API_Example\Business\obj\Debug\net8.0\ref\Business.dll
+D:\ArjunTraining\API_Example\Business\obj\Debug\net8.0\Business.sourcelink.json
