@@ -45,7 +45,36 @@ namespace web.Controllers
         }
 
 
+        [HttpGet("searchById/{id}", Name = "searchById")]
+        public async Task<IActionResult> searchById([FromRoute] int id)
+        {
+            var cmd = "SELECT * FROM Employee WHERE Id=@id";   //column name=@the variable declared
+            var employees = new List<EmployeeModel>();
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.OpenAsync();
+                using var command = new SqlCommand(cmd, connection);
 
+                command.Parameters.AddWithValue("@id",id);
+
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    while (await reader.ReadAsync())
+                    {
+                        var employee = new EmployeeModel
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                            Name = reader.GetString(reader.GetOrdinal("Name")),
+                            Designation = reader.GetString(reader.GetOrdinal("Designation")),
+                            Department = reader.GetString(reader.GetOrdinal("Department")),
+                        };
+                        employees.Add(employee);
+                    }
+                }
+            }
+            return Ok(employees);
+
+        }
 
 
 
@@ -66,7 +95,7 @@ namespace web.Controllers
                         {
                             Id = reader.GetInt32(reader.GetOrdinal("Id")),
                             Name = reader.GetString(reader.GetOrdinal("Name")),
-                           
+
                         };
                         employees.Add(employee);
                     }

@@ -16,23 +16,7 @@
 			padding: 20px;
 		}
 
-		table {
-			width: 100%;
-			border-collapse: collapse;
-			margin: 20px 0;
-			background-color: #fff;
-		}
 
-		th, td {
-			padding: 10px;
-			text-align: left;
-			border: 1px solid #ddd;
-		}
-
-		th {
-			background-color: #007BFF;
-			color: white;
-		}
 
 		input[type="text"] {
 			width: 100%;
@@ -56,12 +40,12 @@
 <body>
 
 	<h2>Select Employee</h2>
-	<select id="employeeDropdown" onchange="showEmployeeDetails()">
+	<select id="employeeDropdown" onchange="fetchEmployee();">
 		<option value="">Select an employee</option>
 		<!-- Options will be dynamically added here -->
 	</select>
 
-	<div class="employee-details" id="employeeDetails" style="display: none;">
+	<div class="employee-details" id="employeeDetails">
 		<label for="empId">ID:</label>
 		<input type="text" id="empId" readonly>
 
@@ -75,14 +59,6 @@
 		<input type="text" id="empDepartment" readonly>
 	</div>
 
-	<table id="reportTable">
-		<thead>
-			<!-- Headers will be dynamically added here -->
-		</thead>
-		<tbody>
-			<!-- Rows will be dynamically added here -->
-		</tbody>
-	</table>
 
 	<script>
 		window.onload = function () {
@@ -93,8 +69,9 @@
 			fetchapiGet();
 		}
 
+
 		function fetchapiGet() {
-			var flag = "GetAllempdetailsrepo";
+			var flag = "searchEmployee";
 			$.ajax({
 				type: "GET",
 				url: '/EmployeeController1/getAPIData',
@@ -109,6 +86,8 @@
 				}
 			});
 		}
+
+
 
 		function LoadDropdown(data) {
 			const dropdown = document.getElementById('employeeDropdown');
@@ -128,36 +107,42 @@
 			}
 		}
 
-		function showEmployeeDetails() {
-			const dropdown = document.getElementById('employeeDropdown');
-			const selectedId = dropdown.value;
-			const employeeDetailsDiv = document.getElementById('employeeDetails');
 
-			if (selectedId) {
-				// Fetch the employee details based on the selected ID
-				fetchapiGetEmployeeDetails(selectedId);
-				employeeDetailsDiv.style.display = 'block'; // Show the details div
-			} else {
-				employeeDetailsDiv.style.display = 'none'; // Hide the details div
-			}
+
+
+
+		 function fetchEmployee(){
+			debugger;
+			const employeeSelect = document.getElementById('employeeDropdown');
+			const selectedvalue = employeeSelect.value;
+			fetchapiGet2(selectedvalue);
 		}
-
-		function fetchapiGetEmployeeDetails(id) {
+			function fetchapiGet2(selectedvalue) {
+			debugger;
+			var flag = "searchById";
+			var indata=flag+"/"+selectedvalue;
 			$.ajax({
 				type: "GET",
-				url: '/EmployeeController1/getEmployeeDetails', // Adjust the URL as needed
-				data: { id: id },                success: function (response) {
-					var employeeData = JSON.parse(response);
-					// Assuming employeeData has properties: id, name, designation, department
-					document.getElementById('empId').value = employeeData.id || '';
-					document.getElementById('empName').value = employeeData.name || '';
-					document.getElementById('empDesignation').value = employeeData.designation || '';
-					document.getElementById('empDepartment').value = employeeData.department || '';
+				url: '/EmployeeController1/getAPIData',
+				data: { datas: indata},
+
+				success: function (response) {
+					const data = JSON.parse(response);
+
+					loaddatatextbox(data);
 				},
-				error: function (response) {
-					console.error("Error fetching employee details:", response);
+				error: function () {
+					console.error("Error fetching data:");
 				}
 			});
+		}
+		function loaddatatextbox(data){
+			if(data.length>0){
+				document.getElementById('empId').value=data[0].id;
+				document.getElementById('empName').value=data[0].name;
+				document.getElementById('empDesignation').value=data[0].designation;
+				document.getElementById('empDepartment').value=data[0].department;
+			}
 		}
 	</script>
 </body>
