@@ -1,0 +1,62 @@
+[
+  {
+    "ContainingType": "BranchApi.Controllers.BranchController",
+    "Method": "GetBranchDetails",
+    "RelativePath": "GetBranchDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetBranchDetails"
+  },
+  {
+    "ContainingType": "BranchApi.Controllers.BranchController",
+    "Method": "GetDetails",
+    "RelativePath": "GetDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "GetDetails"
+  },
+  {
+    "ContainingType": "BranchApi.Controllers.BranchController",
+    "Method": "searchById",
+    "RelativePath": "searchById/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "searchById"
+  },
+  {
+    "ContainingType": "Example2.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Example2.WeatherForecast, BranchApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
