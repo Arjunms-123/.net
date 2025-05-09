@@ -12,6 +12,23 @@
   },
   {
     "ContainingType": "web.Controllers.EmployeeController",
+    "Method": "InsertEmployee",
+    "RelativePath": "InsertEmployee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "web.Models.EmployeeModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InsertEmployee"
+  },
+  {
+    "ContainingType": "web.Controllers.EmployeeController",
     "Method": "searchById",
     "RelativePath": "searchById/{id}",
     "HttpMethod": "GET",

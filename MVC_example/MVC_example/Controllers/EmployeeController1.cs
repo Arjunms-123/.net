@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Text;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace MVC_example.Controllers
 {
@@ -16,14 +18,14 @@ namespace MVC_example.Controllers
         {
             return View();
         }
-        public string getAPIData(string datas)  
-            //Get API Response
+        public IActionResult InsertEmployee()
         {
-            // Split the input string 'datas' using '$' as the delimiter
-            //string[] datastring = datas.Split("$");
-            // Construct the API path using the second and first elements of the split array
-            string ApiPath = "https://localhost:7050/" + datas;
+            return View();
+        }
+        public string getAPIData(string datas)
 
+        {
+            string ApiPath = "https://localhost:7050/" + datas;
             // Create an instance of HttpClient to make the HTTP request
             using (var client = new HttpClient())
             {
@@ -43,6 +45,37 @@ namespace MVC_example.Controllers
                 return data;
             }
         }
+        public async Task<dynamic> postAPIData(string datas)
+        {
+            string[] datastring = datas.Split("$");
+            string ApiPath = "https://localhost:7050/" + datastring[0];
+            var data = "";
 
+
+            string[] datastring2 = datastring[1].Split("~");
+            using (HttpClient client = new HttpClient())
+            {
+                string content = JsonConvert.SerializeObject(new
+                {
+                    id = datastring2[0],
+                    name = datastring2[1],
+                    designation = datastring2[2],
+                    department = datastring2[3]
+
+                });
+                var buffer = Encoding.UTF8.GetBytes(content);
+                var byteContent = new ByteArrayContent(buffer);
+                byteContent.Headers.ContentType = new
+                    System.Net.Http.Headers.MediaTypeHeaderValue
+                    ("application/json");
+
+                HttpResponseMessage result = await client.PostAsync(ApiPath, byteContent);
+                if (result.IsSuccessStatusCode)
+                {
+                    data = result.Content.ReadAsStringAsync().Result;
+                }
+            }
+            return data;
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Runtime.InteropServices;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using web.Context;
 using web.Models;
@@ -103,6 +104,38 @@ namespace web.Controllers
             }
             return Ok(employees);
 
+        }
+
+        //Post employees
+        [HttpPost("InsertEmployee", Name = "InsertEmployee")]
+        public async Task<IActionResult> InsertEmployee([FromBody] EmployeeModel employee)
+        {
+            if(employee==null|| string.IsNullOrWhiteSpace(employee.Name))
+            {
+                return BadRequest("Invalid employee data");
+            }
+            var cmd = "Insert into Employee(Id,Name,Designation,Department) values(@Id,@Name,@Designation,@Department)";
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.OpenAsync();
+                using var command =new SqlCommand(cmd, connection);
+
+                command.Parameters.AddWithValue("@id", employee.Id);
+                command.Parameters.AddWithValue("@Name", employee.Name);
+                command.Parameters.AddWithValue("@Designation", employee.Designation);
+                command.Parameters.AddWithValue("@Department", employee.Department);
+
+                int rowsAffected = await command.ExecuteNonQueryAsync();
+
+                if (rowsAffected > 0) {
+                    return Ok("The employee with the id"+employee.Id+"is successfully inserted");
+                }
+                else
+                {
+                    return BadRequest("Failed to  insert employee");
+                }
+
+            }
         }
         public IActionResult Index()
         {

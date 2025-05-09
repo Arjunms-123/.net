@@ -32,6 +32,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVDb250cm9sbGVyMVxIb21lcGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ArjunTraining/MVC_example/MVC_example/Views/EmployeeController1/InsertEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVDb250cm9sbGVyMVxJbnNlcnRFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ArjunTraining/MVC_example/MVC_example/Views/EmployeeController1/searchEmployee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVDb250cm9sbGVyMVxzZWFyY2hFbXBsb3llZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
