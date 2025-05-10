@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using Microsoft.AspNetCore.Mvc;
+using MVC_example.Models;
 using Newtonsoft.Json;
 
 namespace MVC_example.Controllers
@@ -19,6 +20,10 @@ namespace MVC_example.Controllers
             return View();
         }
         public IActionResult InsertEmployee()
+        {
+            return View();
+        }
+        public IActionResult viewEmployeeReport_Model()
         {
             return View();
         }
@@ -76,6 +81,47 @@ namespace MVC_example.Controllers
                 }
             }
             return data;
+
         }
+
+
+        public List<EmployeeModel>getAPIData_model(string datas)
+
+        {
+            string ApiPath = "https://localhost:7050/" + datas;
+            // Create an instance of HttpClient to make the HTTP request
+            using (var client = new HttpClient())
+            {
+                // Initialize a variable to hold the response data
+              List<EmployeeModel>employees=new List<EmployeeModel>();
+                // Set the base address of the HttpClient to the constructed API path
+                client.BaseAddress = new Uri(ApiPath);
+                // Make a GET request to the API and wait for the result
+                HttpResponseMessage result = client.GetAsync(client.BaseAddress).Result;
+                // Check if the response indicates success
+                if (result.IsSuccessStatusCode)
+                {
+                    var jsonData=result.Content.ReadAsStringAsync().Result;
+                    var apiResponse=JsonConvert.DeserializeObject<List<dynamic>>(jsonData);
+
+                    foreach(var item in apiResponse)
+                    {
+                        var employee = new EmployeeModel
+                        {
+                            EmpCode = item.id,
+                            EmpName = item.name,
+                            Designation = item.designation,
+                            Department = item.department,
+                        };
+                        employees.Add(employee);
+                    }
+                 
+                }
+                return employees;
+            
+            }
+        }
+
+
     }
 }
