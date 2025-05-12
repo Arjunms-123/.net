@@ -1,7 +1,9 @@
 ﻿using System.Text;
+using System.Xml.Linq;
 using Microsoft.AspNetCore.Mvc;
 using MVC_example.Models;
 using Newtonsoft.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace MVC_example.Controllers
 {
@@ -24,6 +26,10 @@ namespace MVC_example.Controllers
             return View();
         }
         public IActionResult viewEmployeeReport_Model()
+        {
+            return View();
+        }
+        public IActionResult InsertEmployee_model()
         {
             return View();
         }
@@ -85,7 +91,7 @@ namespace MVC_example.Controllers
         }
 
 
-        public List<EmployeeModel>getAPIData_model(string datas)
+        public List<EmployeeModel> getAPIData_model(string datas)
 
         {
             string ApiPath = "https://localhost:7050/" + datas;
@@ -93,7 +99,7 @@ namespace MVC_example.Controllers
             using (var client = new HttpClient())
             {
                 // Initialize a variable to hold the response data
-              List<EmployeeModel>employees=new List<EmployeeModel>();
+                List<EmployeeModel> employees = new List<EmployeeModel>();
                 // Set the base address of the HttpClient to the constructed API path
                 client.BaseAddress = new Uri(ApiPath);
                 // Make a GET request to the API and wait for the result
@@ -101,10 +107,10 @@ namespace MVC_example.Controllers
                 // Check if the response indicates success
                 if (result.IsSuccessStatusCode)
                 {
-                    var jsonData=result.Content.ReadAsStringAsync().Result;
-                    var apiResponse=JsonConvert.DeserializeObject<List<dynamic>>(jsonData);
+                    var jsonData = result.Content.ReadAsStringAsync().Result;
+                    var apiResponse = JsonConvert.DeserializeObject<List<dynamic>>(jsonData);
 
-                    foreach(var item in apiResponse)
+                    foreach (var item in apiResponse)
                     {
                         var employee = new EmployeeModel
                         {
@@ -115,13 +121,45 @@ namespace MVC_example.Controllers
                         };
                         employees.Add(employee);
                     }
-                 
+
                 }
                 return employees;
-            
+
             }
         }
 
 
+        public async Task<IActionResult> postAPIData_model([FromBody] EmployeeModel employee)
+        {
+            string apipath = "https://localhost:7050/InsertEmployee";
+            var apiData = new
+            {
+                id = employee.EmpCode,
+                name = employee.EmpName,
+                designation = employee.Designation,
+                department = employee.Department,
+            };
+
+            using (HttpClient client = new HttpClient())
+            {
+                string content = JsonConvert.SerializeObject(apiData);
+                var buffer = Encoding.UTF8.GetBytes(content);
+                var byteContent = new ByteArrayContent(buffer);
+                byteContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+
+                HttpResponseMessage result = await client.PostAsync(apipath, byteContent);
+                if (result.IsSuccessStatusCode)
+                {
+                    var data = await result.Content.ReadAsStringAsync(); // Use await here
+                    return Ok(data);
+                }
+                else
+                    {
+                        return StatusCode((int)result.StatusCode,"Eror occured while inserting employee");
+                    }
+                }
+  
+            }
+
+        }
     }
-}

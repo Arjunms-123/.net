@@ -28,6 +28,10 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/ArjunTraining/Example21/Example21/Views/Branch/BranchReportModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEJyYW5jaFJlcG9ydE1vZGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ArjunTraining/Example21/Example21/Views/Branch/EmployeeSearch.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEVtcGxveWVlU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ArjunTraining/Example21/Example21/Views/Branch/Homepage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXEhvbWVwYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/Example21/Example21/Views/Branch/SearchEmployeeModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnJhbmNoXFNlYXJjaEVtcGxveWVlTW9kZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ArjunTraining/Example21/Example21/Views/Home/Index.cshtml]

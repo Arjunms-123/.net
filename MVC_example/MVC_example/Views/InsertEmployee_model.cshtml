@@ -1,0 +1,99 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+
+<html>
+<html>
+<meta name="viewport" content="width=device-width" />
+<head>
+	<title>View Employee Report</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			padding: 20px;
+		}
+
+
+
+		input[type="text"] {
+			width: 100%;
+			padding: 8px;
+			box-sizing: border-box; /* Ensures padding is included in width */
+		}
+
+		.InsertEmployee {
+			margin-top: 20px;
+			background-color: #fff;
+			padding: 15px;
+			border: 1px solid #ddd;
+		}
+
+		label {
+			display: block;
+			margin: 10px 0 5px;
+		}
+
+		#btn1 {
+			color: green;
+			width: 100px;
+			margin-top: 6px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<div class="InsertEmployee" id="employeeDetails">
+			<label for="empId">ID:</label>
+			<input type="text" id="empId">
+
+			<label for="empName">Name:</label>
+			<input type="text" id="empName">
+
+			<label for="empDesignation">Designation:</label>
+			<input type="text" id="empDesignation">
+
+			<label for="empDepartment">Department:</label>
+			<input type="text" id="empDepartment"><br />
+
+			<button id="btn1" onclick="insert()">Insert</button>
+		</div>
+		<script>
+			function insert(){
+						var Id=document.getElementById('empId').value;
+						var empName=document.getElementById('empName').value;
+						var empDesignation=document.getElementById('empDesignation').value;
+						var empDepartment=document.getElementById('empDepartment').value;
+						fetchapiPost(Id,empName,empDesignation,empDepartment);
+			}
+
+			function fetchapiPost(Id,empName,empDesignation,empDepartment){
+			var flag="InsertEmployee";
+			var indata=flag+'$'+Id+"~"+empName+"~"+empDesignation+"~"+empDepartment;
+			$.ajax({
+				type:"POST",
+				url:'/Branch/postAPIData',
+				data:{datas:indata},
+				async :false,
+				success:function(response){
+				alert(response);
+			},
+			error:function(response){
+				check=0;
+			}
+			});
+			}
+
+		</script>
+	</form>
+</body>
+</html>

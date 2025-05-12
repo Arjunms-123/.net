@@ -1,0 +1,158 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>View Employee Report</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			padding: 20px;
+		}
+
+
+
+		input[type="text"] {
+			width: 100%;
+			padding: 8px;
+			box-sizing: border-box; /* Ensures padding is included in width */
+		}
+
+		.employee-details {
+			margin-top: 20px;
+			background-color: #fff;
+			padding: 15px;
+			border: 1px solid #ddd;
+		}
+
+		label {
+			display: block;
+			margin: 10px 0 5px;
+		}
+	</style>
+</head>
+<body>
+
+	<h2>Select Employee</h2>
+	<select id="employeeDropdown" onchange="fetchEmployee();">
+		<option value="">Select an employee</option>
+		<!-- Options will be dynamically added here -->
+	</select>
+
+	<div class="employee-details" id="employeeDetails">
+		<label for="brid">ID:</label>
+		<input type="text" id="brid" readonly>
+
+		<label for="brName">Name:</label>
+		<input type="text" id="brName" readonly>
+
+		<label for="brHead">Branch Head:</label>
+		<input type="text" id="brHead" readonly>
+
+		<label for="noEmp">No of Employees:</label>
+		<input type="text" id="noEmp" readonly>
+	</div>
+
+
+	<script>
+		window.onload = function () {
+			viewreport();
+		};
+
+		function viewreport() {
+			fetchapiGet();
+		}
+
+
+		function fetchapiGet() {
+			var flag = "GetBranchDetails ";
+			$.ajax({
+				type: "GET",
+				url: '/Branch/getAPIData_model',
+				data: { datas: flag },
+				async: false,
+				success: function (response) {
+					
+					LoadDropdown(response);
+				},
+				error: function (response) {
+					console.error("Error fetching data:", response);
+				}
+			});
+		}
+
+
+
+		function LoadDropdown(data) {
+			const dropdown = document.getElementById('employeeDropdown');
+
+			// Clear existing options
+			dropdown.innerHTML = '<option value="">Select an employee</option>';
+
+			// Check if data is valid
+			if (Array.isArray(data) && data.length > 0) {
+				// Populate the dropdown with new options
+				data.forEach(item => {
+					const option = document.createElement('option');
+					option.value = item.brid; // Assuming each item has a unique 'id'
+					option.textContent = item.brName; // Assuming each item has a 'name' property
+					dropdown.appendChild(option);
+				});
+			}
+		}
+
+
+
+
+
+		 function fetchEmployee(){
+			debugger;
+			const employeeSelect = document.getElementById('employeeDropdown');
+			const selectedvalue = employeeSelect.value;
+			fetchapiGet2(selectedvalue);
+		}
+			function fetchapiGet2(selectedvalue) {
+			debugger;
+			var flag = "searchById";
+			var indata=flag+"/"+selectedvalue;
+			$.ajax({
+				type: "GET",
+				url: '/Branch/getAPIData_model',
+				data: { datas: indata},
+
+				success: function (response) {
+					
+
+					loaddatatextbox(response);
+				},
+				error: function () {
+					console.error("Error fetching data:");
+				}
+			});
+		}
+		function loaddatatextbox(data){
+
+			debugger;
+			if(data.length>0){
+				document.getElementById('brid').value=data[0].brid;
+				document.getElementById('brName').value=data[0].brName;
+				document.getElementById('brHead').value=data[0].brHead;
+				document.getElementById('noEmp').value=data[0].noEmp;
+			}
+		}
+	</script>
+</body>
+</html>
+
