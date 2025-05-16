@@ -20,7 +20,7 @@ namespace MyConsoleapp
                 Console.WriteLine("The number is odd");
             }
         }
-        static void Main(string[] args) 
+        static void Main(string[] args)
         {
             Class4 p = new Class4();
             p.checkEvenOdd();
