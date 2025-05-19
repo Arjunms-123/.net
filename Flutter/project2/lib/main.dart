@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:project2/page1.dart';
-import 'package:project2/page3.dart';
-import 'package:project2/page4.dart';
-import 'package:project2/page5.dart';
+import 'package:project2/calculator.dart';
+import 'package:project2/datatransfer.dart';
+import 'package:project2/multiplication.dart';
+import 'package:project2/prime.dart';
+import 'package:project2/radio.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: page5(),
+      home: datatransfer(),
     );
   }
 }

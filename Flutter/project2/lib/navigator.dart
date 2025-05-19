@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:project2/page2.dart';
+import 'package:project2/prime.dart';
 
-class Page1 extends StatelessWidget {
-  const Page1({super.key});
+class navigator extends StatelessWidget {
+  const navigator({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class Page1 extends StatelessWidget {
               onPressed: () {
                 // Navigate to Page 6 (ensure Page6 is defined)
                 Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const page2()),
+                  MaterialPageRoute(builder: (context) => const prime()),
                 );
               },
               style: ElevatedButton.styleFrom(
