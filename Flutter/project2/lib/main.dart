@@ -4,6 +4,7 @@ import 'package:project2/datatransfer.dart';
 import 'package:project2/multiplication.dart';
 import 'package:project2/prime.dart';
 import 'package:project2/radio.dart';
+import 'package:project2/select_emp.dart';
 import 'package:project2/validation.dart';
 
 void main() {
@@ -37,8 +38,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: Validation(),
+      home: EmployeeTable(),
     );
+
   }
 }
 

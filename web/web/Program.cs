@@ -2,6 +2,16 @@ using web.Context;
 using web.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+// add cors
+builder.Services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+{
+    builder.AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader()
+    .SetIsOriginAllowed((host) => true);
+}
+    ));
+
 
 // Add services to the container.
 
@@ -15,6 +25,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -22,10 +33,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
+
 app.UseHttpsRedirection();
+app.UseRouting();
+app.UseCors("MyPolicy");
 
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
