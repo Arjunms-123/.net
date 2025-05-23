@@ -1,0 +1,85 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MVC_example
+build_property.RootNamespace = MVC_example
+build_property.ProjectDir = D:\ArjunTraining\MVC\MVC_example\MVC_example\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ArjunTraining\MVC\MVC_example\MVC_example
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/EmployeeController1/Homepage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVDb250cm9sbGVyMVxIb21lcGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/EmployeeController1/InsertEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVDb250cm9sbGVyMVxJbnNlcnRFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/EmployeeController1/InsertEmployee_model.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVDb250cm9sbGVyMVxJbnNlcnRFbXBsb3llZV9tb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/EmployeeController1/searchEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVDb250cm9sbGVyMVxzZWFyY2hFbXBsb3llZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/EmployeeController1/viewEmployeeReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVDb250cm9sbGVyMVx2aWV3RW1wbG95ZWVSZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/EmployeeController1/viewEmployeeReport_Model.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVDb250cm9sbGVyMVx2aWV3RW1wbG95ZWVSZXBvcnRfTW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/InsertEmployee_model.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5zZXJ0RW1wbG95ZWVfbW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ArjunTraining/MVC/MVC_example/MVC_example/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-8viqtindl9

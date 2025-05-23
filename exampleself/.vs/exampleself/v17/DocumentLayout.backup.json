@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ArjunTraining\\exampleself\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|d:\\arjuntraining\\exampleself\\exampleself\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|solutionrelative:exampleself\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|d:\\arjuntraining\\exampleself\\exampleself\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|solutionrelative:exampleself\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|d:\\arjuntraining\\exampleself\\exampleself\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|solutionrelative:exampleself\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|d:\\arjuntraining\\exampleself\\exampleself\\datacontext\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|solutionrelative:exampleself\\datacontext\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|d:\\arjuntraining\\exampleself\\exampleself\\models\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|solutionrelative:exampleself\\models\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|d:\\arjuntraining\\exampleself\\exampleself\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|solutionrelative:exampleself\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|d:\\arjuntraining\\exampleself\\exampleself\\exampleself.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8C3CE416-0EB6-47F4-9DD3-B778862CDD63}|exampleself\\exampleself.csproj|solutionrelative:exampleself\\exampleself.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\exampleself\\exampleself\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "exampleself\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\ArjunTraining\\exampleself\\exampleself\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "exampleself\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:31:19.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\exampleself\\exampleself\\Program.cs",
+              "RelativeDocumentMoniker": "exampleself\\Program.cs",
+              "ToolTip": "D:\\ArjunTraining\\exampleself\\exampleself\\Program.cs*",
+              "RelativeToolTip": "exampleself\\Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:16:19.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeModel.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\exampleself\\exampleself\\Models\\EmployeeModel.cs",
+              "RelativeDocumentMoniker": "exampleself\\Models\\EmployeeModel.cs",
+              "ToolTip": "D:\\ArjunTraining\\exampleself\\exampleself\\Models\\EmployeeModel.cs*",
+              "RelativeToolTip": "exampleself\\Models\\EmployeeModel.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:16:12.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\exampleself\\exampleself\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "exampleself\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\ArjunTraining\\exampleself\\exampleself\\Controllers\\EmployeeController.cs*",
+              "RelativeToolTip": "exampleself\\Controllers\\EmployeeController.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAgwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:17:14.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ArjunTraining\\exampleself\\exampleself\\appsettings.json",
+              "RelativeDocumentMoniker": "exampleself\\appsettings.json",
+              "ToolTip": "D:\\ArjunTraining\\exampleself\\exampleself\\appsettings.json*",
+              "RelativeToolTip": "exampleself\\appsettings.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-22T11:21:16.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\exampleself\\exampleself\\DataContext\\DataContext.cs",
+              "RelativeDocumentMoniker": "exampleself\\DataContext\\DataContext.cs",
+              "ToolTip": "D:\\ArjunTraining\\exampleself\\exampleself\\DataContext\\DataContext.cs*",
+              "RelativeToolTip": "exampleself\\DataContext\\DataContext.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T11:15:47.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "exampleself",
+              "DocumentMoniker": "D:\\ArjunTraining\\exampleself\\exampleself\\exampleself.csproj",
+              "RelativeDocumentMoniker": "exampleself\\exampleself.csproj",
+              "ToolTip": "D:\\ArjunTraining\\exampleself\\exampleself\\exampleself.csproj",
+              "RelativeToolTip": "exampleself\\exampleself.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-22T11:15:16.168Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

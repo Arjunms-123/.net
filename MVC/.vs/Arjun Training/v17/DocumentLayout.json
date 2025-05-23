@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Arjun Training\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arjun Training\\Application 1\\Application 1\\BMI.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application 1\\Application 1\\BMI.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arjun Training\\Application 1\\Application 1\\Registrationform.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application 1\\Application 1\\Registrationform.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Arjun Training\\Application 1\\Application 1\\sum.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Application 1\\Application 1\\sum.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BMI.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\BMI.aspx.cs",
+              "RelativeDocumentMoniker": "Application 1\\Application 1\\BMI.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\BMI.aspx.cs",
+              "RelativeToolTip": "Application 1\\Application 1\\BMI.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T04:44:14.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Registrationform.aspx.designer.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\Registrationform.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Application 1\\Application 1\\Registrationform.aspx.designer.cs",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\Registrationform.aspx.designer.cs",
+              "RelativeToolTip": "Application 1\\Application 1\\Registrationform.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T04:32:54.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "sum.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\sum.aspx.cs",
+              "RelativeDocumentMoniker": "Application 1\\Application 1\\sum.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\sum.aspx.cs",
+              "RelativeToolTip": "Application 1\\Application 1\\sum.aspx.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T06:21:15.628Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

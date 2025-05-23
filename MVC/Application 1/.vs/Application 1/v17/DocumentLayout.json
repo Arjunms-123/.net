@@ -1,0 +1,182 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Arjun Training\\Application 1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|d:\\arjun training\\application 1\\application 1\\register2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|solutionrelative:application 1\\register2.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|D:\\Arjun Training\\Application 1\\application 1\\register2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|solutionrelative:application 1\\register2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|D:\\Arjun Training\\Application 1\\application 1\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|solutionrelative:application 1\\register.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|D:\\Arjun Training\\Application 1\\application 1\\registrationform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|solutionrelative:application 1\\registrationform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|D:\\Arjun Training\\Application 1\\application 1\\dropdown1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|solutionrelative:application 1\\dropdown1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|D:\\Arjun Training\\Application 1\\application 1\\dropdown1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|solutionrelative:application 1\\dropdown1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|D:\\Arjun Training\\Application 1\\application 1\\register2.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|solutionrelative:application 1\\register2.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|D:\\Arjun Training\\Application 1\\application 1\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|solutionrelative:application 1\\register.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|D:\\Arjun Training\\Application 1\\application 1\\link.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|solutionrelative:application 1\\link.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|D:\\Arjun Training\\Application 1\\application 1\\link.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7C7ED8C2-44E0-4F68-A31F-3DE5F1B27E07}|Application 1\\Application 1.csproj|solutionrelative:application 1\\link.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "dropdown1.aspx",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\dropdown1.aspx",
+              "RelativeDocumentMoniker": "Application 1\\dropdown1.aspx",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\dropdown1.aspx",
+              "RelativeToolTip": "Application 1\\dropdown1.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-30T06:26:19.545Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "dropdown1.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\dropdown1.aspx.cs",
+              "RelativeDocumentMoniker": "Application 1\\dropdown1.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\dropdown1.aspx.cs",
+              "RelativeToolTip": "Application 1\\dropdown1.aspx.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T06:27:16.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "register2.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\register2.aspx.cs",
+              "RelativeDocumentMoniker": "Application 1\\register2.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\register2.aspx.cs*",
+              "RelativeToolTip": "Application 1\\register2.aspx.cs*",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T05:10:27.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Registrationform.aspx",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\Registrationform.aspx",
+              "RelativeDocumentMoniker": "Application 1\\Registrationform.aspx",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\Registrationform.aspx",
+              "RelativeToolTip": "Application 1\\Registrationform.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-30T05:05:09.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "register2.aspx.designer.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\register2.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Application 1\\register2.aspx.designer.cs",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\register2.aspx.designer.cs",
+              "RelativeToolTip": "Application 1\\register2.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T04:59:46.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "register2.aspx",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\register2.aspx",
+              "RelativeDocumentMoniker": "Application 1\\register2.aspx",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\register2.aspx",
+              "RelativeToolTip": "Application 1\\register2.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-30T04:57:59.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "register.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\register.aspx.cs",
+              "RelativeDocumentMoniker": "Application 1\\register.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\register.aspx.cs",
+              "RelativeToolTip": "Application 1\\register.aspx.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T04:55:33.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "register.aspx",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\register.aspx",
+              "RelativeDocumentMoniker": "Application 1\\register.aspx",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\register.aspx",
+              "RelativeToolTip": "Application 1\\register.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-30T03:49:28.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "link.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\link.aspx.cs",
+              "RelativeDocumentMoniker": "Application 1\\link.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\link.aspx.cs",
+              "RelativeToolTip": "Application 1\\link.aspx.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAiwBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-30T03:42:01.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "link.aspx",
+              "DocumentMoniker": "D:\\Arjun Training\\Application 1\\Application 1\\link.aspx",
+              "RelativeDocumentMoniker": "Application 1\\link.aspx",
+              "ToolTip": "D:\\Arjun Training\\Application 1\\Application 1\\link.aspx",
+              "RelativeToolTip": "Application 1\\link.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-30T03:38:27.766Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

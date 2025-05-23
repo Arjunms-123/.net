@@ -1,7 +1,0 @@
-Data : "GetAllempdetails"
- 
-Data path : "https://localhost:7048/GetAllempdetails"
-
-Value : "[{\"id\":101,\"name\":\"Aju\",\"designation\":\"HR\",\"department\":\"IT\"},{\"id\":102,\"name\":\"Kichu\",\"designation\":\"manager\",\"department\":\"Sales\"},{\"id\":103,\"name\":\"Sachu\",\"designation\":\"HR\",\"department\":\"Transport\"}]"
-
-Return data : "[{\"id\":101,\"name\":\"Aju\",\"designation\":\"HR\",\"department\":\"IT\"},{\"id\":102,\"name\":\"Kichu\",\"designation\":\"manager\",\"department\":\"Sales\"},{\"id\":103,\"name\":\"Sachu\",\"designation\":\"HR\",\"department\":\"Transport\"}]"

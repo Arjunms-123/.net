@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Arjun Training\\WebApplication2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|D:\\Arjun Training\\WebApplication2\\nav.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|solutionrelative:nav.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|D:\\Arjun Training\\WebApplication2\\navvaluepassing1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|solutionrelative:navvaluepassing1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|d:\\arjun training\\webapplication2\\product.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|solutionrelative:product.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|D:\\Arjun Training\\WebApplication2\\sessionstudent2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|solutionrelative:sessionstudent2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|D:\\Arjun Training\\WebApplication2\\sessioneg3.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|solutionrelative:sessioneg3.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|D:\\Arjun Training\\WebApplication2\\sessioneg3.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|solutionrelative:sessioneg3.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|D:\\Arjun Training\\WebApplication2\\sessioneg2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|solutionrelative:sessioneg2.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|D:\\Arjun Training\\WebApplication2\\navvaluepassing1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|solutionrelative:navvaluepassing1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|D:\\Arjun Training\\WebApplication2\\product.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|solutionrelative:product.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|D:\\Arjun Training\\WebApplication2\\sessioneg1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DF9108C-5609-4074-902D-266F2E4B4C67}|WebApplication2.csproj|solutionrelative:sessioneg1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "nav.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\WebApplication2\\nav.aspx.cs",
+              "RelativeDocumentMoniker": "nav.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\WebApplication2\\nav.aspx.cs",
+              "RelativeToolTip": "nav.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T03:33:16.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "sessionstudent2.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\WebApplication2\\sessionstudent2.aspx.cs",
+              "RelativeDocumentMoniker": "sessionstudent2.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\WebApplication2\\sessionstudent2.aspx.cs",
+              "RelativeToolTip": "sessionstudent2.aspx.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T03:33:00.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "sessioneg3.aspx.designer.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\WebApplication2\\sessioneg3.aspx.designer.cs",
+              "RelativeDocumentMoniker": "sessioneg3.aspx.designer.cs",
+              "ToolTip": "D:\\Arjun Training\\WebApplication2\\sessioneg3.aspx.designer.cs",
+              "RelativeToolTip": "sessioneg3.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T03:32:57.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "sessioneg3.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\WebApplication2\\sessioneg3.aspx.cs",
+              "RelativeDocumentMoniker": "sessioneg3.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\WebApplication2\\sessioneg3.aspx.cs",
+              "RelativeToolTip": "sessioneg3.aspx.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T03:32:41.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "sessioneg2.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\WebApplication2\\sessioneg2.aspx.cs",
+              "RelativeDocumentMoniker": "sessioneg2.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\WebApplication2\\sessioneg2.aspx.cs",
+              "RelativeToolTip": "sessioneg2.aspx.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T03:32:17.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "navvaluepassing1.aspx",
+              "DocumentMoniker": "D:\\Arjun Training\\WebApplication2\\navvaluepassing1.aspx",
+              "RelativeDocumentMoniker": "navvaluepassing1.aspx",
+              "ToolTip": "D:\\Arjun Training\\WebApplication2\\navvaluepassing1.aspx",
+              "RelativeToolTip": "navvaluepassing1.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-29T03:30:39.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "navvaluepassing1.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\WebApplication2\\navvaluepassing1.aspx.cs",
+              "RelativeDocumentMoniker": "navvaluepassing1.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\WebApplication2\\navvaluepassing1.aspx.cs",
+              "RelativeToolTip": "navvaluepassing1.aspx.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T03:30:51.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Product.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\WebApplication2\\Product.aspx.cs",
+              "RelativeDocumentMoniker": "Product.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\WebApplication2\\Product.aspx.cs",
+              "RelativeToolTip": "Product.aspx.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAUwDYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-26T04:59:43.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.aspx",
+              "DocumentMoniker": "D:\\Arjun Training\\WebApplication2\\Product.aspx",
+              "RelativeDocumentMoniker": "Product.aspx",
+              "ToolTip": "D:\\Arjun Training\\WebApplication2\\Product.aspx",
+              "RelativeToolTip": "Product.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-04-26T04:43:48.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "sessioneg1.aspx.cs",
+              "DocumentMoniker": "D:\\Arjun Training\\WebApplication2\\sessioneg1.aspx.cs",
+              "RelativeDocumentMoniker": "sessioneg1.aspx.cs",
+              "ToolTip": "D:\\Arjun Training\\WebApplication2\\sessioneg1.aspx.cs",
+              "RelativeToolTip": "sessioneg1.aspx.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T10:10:00.781Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

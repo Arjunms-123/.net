@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Arjun Training\\myapplicatio3\\",
+  "Documents": [],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": []
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "FloatingWindowState": {
+        "Id": "462e46dd-8470-4e1b-8c75-691850121276",
+        "Display": 0,
+        "X": 0,
+        "Y": 85,
+        "Width": 240,
+        "Height": 578,
+        "WindowState": 0
+      },
+      "DocumentGroups": []
+    }
+  ]
+}

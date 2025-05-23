@@ -1,0 +1,377 @@
+API
+=====
+API stands for Application Programming Interface. It is a set of protocols, routines, and tools for building software applications. It allows different software components to interact with each other. APIs are used to develop software applications, and they are essential for the success of modern businesses.
+Swagger
+-------
+Swagger is an open-source framework for building RESTful APIs. It allows developers to design and document APIs in a user-friendly interface. It provides a visual representation of the API, including the available endpoints, parameters, and responses. It also provides tools for testing and debugging the API.
+
+To create an api we use the business and dataacess.
+First create a new ASP.NET Core Web API project in Visual Studio when creating uncheck the option of place solution inside the project folder.
+
+Then right click on the solution and select Add -> New Project.
+Select Class library and Name it as "Business" and click on Add.
+Do the same for DataAccess project.  
+
+Both the projects should be in the WebAPI project.
+inside the Business project create a new Folder called Service. Inside this create a service class. Make sure that the class is public.
+
+Inside the DataAccess project create a new folder called Repository. Inside this create a repository class. Make sure that the class is public.
+
+Now inside the API project right click on the Controllers folder and select Add -> Controller.
+Choose an empty controller give a controller name and click on Add.
+
+After this we need to add buid dependency and project reference.
+First right click on the API project and select Add -> Build Dependency -> Project Dependency.
+Choose the Business and dataacess projects and click on OK.
+
+Now right click on the API project and select Add -> Project Reference.
+Choose Business and dataacess projects and click on OK.
+
+After this we need to add the same for the Business.
+Right click on the Business project and select Add -> Build Dependency -> Project Dependency.
+Add the dataacess project and click on OK.
+Now right click on the Business project and select Add -> Project Reference.
+Add the dataacess project and click on OK.
+
+
+Service
+-------
+The service class is used for common operations that are used in multiple places. It is a modern feature of programming that allows us to create reusable code.
+The service class utilizes the dependency injection feature of ASP.NET Core to inject the repository class.
+The service class let's us encapsulate the business logic and make it reusable. It promotes seperation of concerns and makes the code more maintainable.
+
+Dependency injection : Dependency injection is a technique where an object receives its dependencies (such as other objects) from an external source. In ASP.NET Core, we use dependency injection to inject the repository class into the service class.
+
+To inject the service and repository classes into the controller.
+First add 
+builder.Services.AddTransient<classname>();
+
+inside the Program.cs of the API project.
+Do this for both Service and Repository classes.
+
+Then inside the controller class create private readonly objects for the service and repository classes. like:
+        private readonly EmployeeRepo _employeeRepo;
+        private readonly EmployeeService _employeeService;
+
+After this we need to inject the service and repository classes into the constructor of the controller.
+
+public EmployeeController(EmployeeRepo employeeRepo, EmployeeService employeeService)
+        {
+            _employeeRepo = employeeRepo;
+            _employeeService = employeeService;
+        }
+
+Now we can use the service and repository classes in the controller.
+
+After this inside the service class create an object of the repository class and do the constructor injection.
+like:
+private readonly EmployeeRepo _employeeRepo;
+
+public EmployeeService(EmployeeRepo employeeRepo)
+{
+    _employeeRepo = employeeRepo;
+}
+
+Now we can define functions in the repository class. inside the repository class create 
+functions using 
+public async Task<dynamic> functionName(arguments){
+    //code to execute the function
+}
+
+The async keyword is used to make the function asynchronous. The Task<dynamic> return type is used to return the result of the function.
+
+To call this function we use the service class. Inside the service class create a similar function and call the repository function.
+Like :
+public async Task<dynamic> functionName(arguments){
+    return await _repoObject.functionName(arguments);
+}
+
+NOTE: That we must use the await keyword when calling the repository function inside of the function in the service.
+ 
+After this we need to use the service class in the controller class to execute the function.
+For that create a function in the controller class which is similar to the service class function like:
+public async Task<dynamic> functionName(arguments){
+    return await _employeeService.functionName(arguments);
+}
+
+In the controller function we need to specify the type of the http request inside []. Along with this we need to specify the path of the api. If we want we can specify the Name of the api using Name attribute.
+We can pass parameters from route using the {parameterName}. To access this we need to specify it in the function argument using [FromRoute].
+Eg:
+        [HttpGet("GetName/{name}", Name ="GetName")]
+        public Task<dynamic> GetName([FromRoute]string name){
+            var res = _employeeService.GetNameService(name);
+            return res;
+        }
+
+appsettings.json is the configuration file for the application. It contains the database connection string, logging settings, and other application settings.
+Inside this specify the connection string for the database.
+For MSSQL server it will be like:
+"ConnectionStrings": {
+    "SQLConnection": "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Administrator\\Documents\\Company_431227.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True"
+}
+
+After this create a folder called Context inside the DataAccess project. Inside this create a new class called DataContext. This class will be used to connect to the database.
+Extend the DataContext class with DbContext class. If you are getting import error then install the necessary packages.
+
+Inside the class create a private readonly string object for the connection string.
+
+Then create a constructor for the DataContext class which takes the IConfiguration object as argument.
+inisde that initialize the connection string by getting the connection string from the IConfiguration object.
+
+Then create a public function which returns an SqlConnection object.
+
+The complete code will look like this:
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+
+namespace DataAccess.Context
+{
+    public class DataContext:DbContext
+    {
+        private readonly string _connectionString;
+
+        public DataContext(IConfiguration configuration)
+        {
+            _connectionString = configuration.GetConnectionString("SQLConnection");
+        }
+
+        public SqlConnection CreateConnection()
+        {
+            return new SqlConnection(_connectionString);
+        }
+    }
+}
+
+After this create a model folder inside the DataAccess project. Inside this create a new class called with the parameters. This class will be used to represent the table in the database.
+For example if we have a table called Employee with columns Id, Name, Designation then we will create a class called Employee with properties Id, Name, Designation.
+eg:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccess.Models
+{
+    public class Employee
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Designation { get; set; }
+        public int Deparment {  get; set; }
+    }
+}
+
+the get; set; will create getters and setters for the properties automatically.
+
+After this inject the dependency of datacontext class and the model class into the Program.cs file of the API project.
+
+Then create an object for model and datacontext class inside the repository class.
+
+do the constructor injection for the model class and datacontext class.
+eg:
+ private DataContext _context;
+ private Employee _model;
+
+ public EmployeeRepo(Employee model, DataContext context)
+ {
+     _context = context;
+     _model = model;
+ }
+
+ We extend the Repository class with ControllerBase class so that we can use the built-in functions of the ControllerBase class like Ok() which returns the data in the form of an ok response in json format.
+ We can write functions in the repository to perform CRUD operations on the database.
+ We use IActionResult to return the response in the form of an IActionResult object. 
+ We can create connection by calling the CreateConnection() function of the datacontext class.
+ to open an asynchronous connection we use await OpenAsync() function on the connection object.
+We can create an sql command by using the constructor of SqlCommand class and passing the connection object and query as arguments.
+We can execute the sql command by calling the ExcuteReaderAsync() function on the SqlCommand object(if you want to retrieve data).
+
+We use the ReadAsync() function to read the data from the SqlDataReader object and convert it into a list of objects of the model class.
+The reader.GetInt32(), reader.GetString() functions are used to get the values of the columns in the SqlDataReader object.
+inside these reader.GetOrdinal() function is used to get the index of the column(column name) in the SqlDataReader object.
+eg:
+        public async Task<IActionResult> GetAllEmployeeDetails()
+        {
+            var cmd = "SELECT * FROM Employee";
+            var employees = new List<Employee>();
+            using (var connection = _context.CreateConnection())
+            {
+                await connection.OpenAsync();
+                using var command = new SqlCommand(cmd, connection);
+                using (var reader = await command.ExecuteReaderAsync())
+                {
+                    while (await reader.ReadAsync())
+                    {
+                        var employee = new Employee
+                        {
+                            Id = reader.GetInt32(reader.GetOrdinal("Id")),
+                            Name = reader.GetString(reader.GetOrdinal("Name")),
+                            Designation = reader.GetString(reader.GetOrdinal("Designation")),
+                            Department = reader.GetString(reader.GetOrdinal("Dept"))
+                        };
+
+                        employees.Add(employee);
+                    }
+                }
+            }
+            return Ok(employees);
+        }
+
+Razor Pages
+-----------
+Razor Pages is a new feature of ASP.NET Core that allows us to create web pages using Razor syntax. It is a lightweight and fast way to create web pages. 
+It's extension is .cshtml.
+
+To create an mvc app with view we need to search for ASP.NET core web app model view controller template in visual studio.
+
+Layout.cshtml is the main html page, here we will define the layout of the web page.
+
+Program.cs is the entry point of the application. We define the controller to be executed when the application starts.
+
+The name of the view folder is same as the name of the controller. If we define like this the controller will automatically be mapped to the view folder.
+In the program.cs we specify the controller name as well as the action(function) to be performed.
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+Inside the controller we define the action(function) to be performed Here we simply return the view.
+To create a controller we right click on the controller folder and select Add -> Controller.
+
+If you specify the controller name not as per the standard naming convention then you need to specify the full name wherever we use the controller.
+We use Pascal Case for the controller name and action name.
+
+We can create an action funtion like:
+        public IActionResult HomePage()
+        {
+            return View();
+        }
+The function returns an IActionResult object which is used to return the view.
+
+To create a view we can either right click on the view folder and select Add -> View or create a new view file manually.
+At this time we need to specify the view name exactly as the action function name.
+
+Alternatively we can create a view by right clicking on the Action function name and selecting Add View -> Razor view.
+By doing this automatically the folder name and view file will be created.
+
+If we want to add links we can use something like:
+ <a class="nav-link text-dark" asp-area="" asp-controller="Employee" asp-action="ViewEmployeeReport">View Report</a>
+Here we specify the controller and action name.
+If we want to get the data from the api and display it in our view we can use ajax requests. To send an ajax request to a particular controller 
+We need to pass the controller name and action name as url.
+For example if we have an EmployeeController with an action called  getData then we must send the ajax request to
+Employee/getData.
+
+We need to define the success callback function and the error callback function for ajax call.
+
+To create a post controller we must use HttpPost attribute instead of HttpGet attribute.
+To get the data from the RequestBody we can use the FromBody attribute in the argument of the controller function.
+
+return StatusCode(StatusCodes.Status500InternalServerError); can be used to send 500 internal server error response.
+
+BadRequest("Invalid Employee Data") can be used to send 400 bad request response.
+We use the ExecuteNonQueryAsync() function to execute the sql command.
+it will return a non negative integer .
+
+if we are integrating it with the mvc app then we need to send the data as json object.
+We can get the data from the frontend as a string and split it into an array of strings.
+then we can use JsonConvert.SerializeObject() to create a json object. Inside the constructor we can initialize the 
+objects required for the json data. 
+eg:
+string requestContent = JsonConvert.SerializeObject(new
+{
+    id = inputArray[0],
+    name = inputArray[1],
+    dept= inputArray[2],
+    designation = inputArray[3]
+});
+
+After this we need to convert this to a byte array. Set the content type in the content header.
+send the request using PostAsync() of the HttpClient object. The arguments of the function are the api endpoint and the bytearray.
+
+Given below is the complete controller code of the mvc.
+public async Task<dynamic> InsertNewEmployee(string dataString)
+{
+    string apiEndPoint = "https://localhost:7045/api/v1/InsertNewEmployee";
+    string[] inputArray = dataString.Split("$");
+    var data = "";
+    using(var client = new HttpClient())
+    {
+        string requestContent = JsonConvert.SerializeObject(new
+        {
+            id = inputArray[0],
+            name = inputArray[1],
+            dept= inputArray[2],
+            designation = inputArray[3]
+        });
+
+        var buffer = Encoding.UTF8.GetBytes(requestContent);
+
+        var byteContent = new ByteArrayContent(buffer);
+
+        byteContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
+        HttpResponseMessage result = await client.PostAsync(apiEndPoint, byteContent);
+
+        if (result.IsSuccessStatusCode)
+        {
+            data = result.Content.ReadAsStringAsync().Result;
+        }
+    }
+    return data;
+}
+
+We can use the model to bind the data inside the controller. For this we need to create a class in the models folder.
+Inside the models we define the fields of the response structure. The name need not be identical to the name of the response structure.
+
+The controller method needs to return the model object. If the response of the api is an array we need to return the list of model objects from the controller.
+
+Once we call the api and read the result as string we need to convert it into a model object using the JsonConvert.DeserializeObject() function.
+If there is a list we need to specify the type as <List<dynamic>>.
+eg:
+                    var apiResponse = JsonConvert.DeserializeObject<List<dynamic>>(jsonData);
+
+after this iterate through the list and initialize the model fields from the response data.
+
+The complete controller class looks like:
+public List<Employee> getEmployeeDataToModel(string datas)     //Get API Response
+{
+    string ApiPath = "https://localhost:7045/api/v1/" + datas;
+
+    // Create an instance of HttpClient to make the HTTP request
+    using (var client = new HttpClient())
+    {
+        // Initialize a variable to hold the response data
+        List<Employee> employees = new List<Employee>();
+        
+        // Set the base address of the HttpClient to the constructed API path
+        client.BaseAddress = new Uri(ApiPath);
+        // Make a GET request to the API and wait for the result
+        HttpResponseMessage result = client.GetAsync(client.BaseAddress).Result;
+        // Check if the response indicates success
+        if (result.IsSuccessStatusCode)
+        {
+            // Read the response content as a string
+            var jsonData = result.Content.ReadAsStringAsync().Result;
+            var apiResponse = JsonConvert.DeserializeObject<List<dynamic>>(jsonData);
+            foreach(var item in apiResponse)
+            {
+                var employee = new Employee
+                {
+                    EmpCode = item.id,
+                    EmpName = item.name,
+                    Position = item.designation,
+                    Department = item.dept
+                };
+                employees.Add(employee);
+            }
+        }
+        // Return the response data 
+        return employees;
+    }
+}

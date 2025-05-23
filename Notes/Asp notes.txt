@@ -1,0 +1,276 @@
+Differrence between ASP.net and .net core:
+ASP.net is a web framework for building web applications using C# and HTML. It is a part of the .NET Framework and is used to build dynamic web applications. It is a server-side technology that runs on the IIS web server.
+.NET Core is a cross-platform, high-performance, open-source framework for building modern, cloud-based, and microservice-based applications. It is a part of the .NET Foundation and is used to build .NET applications.
+It is a client-side technology that runs on the .NET runtime. 
+Advantages of .net core:
+1.Faster performance: ASP.NET Core (built on .NET Core/.NET 5+) is faster than ASP.NET (built on the .NET Framework) due to architectural optimizations like a lightweight middleware pipeline, reduced overhead, and performance-focused libraries like System.Text.Json.
+
+2.Improved performance for modern workloads: ASP.NET Core is optimized for cloud-native and microservice architectures, with features like in-process hosting, async support, and integration with Docker/Kubernetes, making it more efficient than traditional ASP.NET.
+
+3.Enhanced security: ASP.NET Core benefits from modern security practices, including automatic security updates via NuGet, built-in HTTPS enforcement, and improved dependency management. Cross-platform compatibility also reduces risks tied to legacy Windows-specific vulnerabilities.
+
+4.Better scalability: ASP.NET Core’s lightweight, modular design allows horizontal scaling and stateless architectures, making it ideal for distributed systems. Features like WebSocket support and gRPC integration outperform ASP.NET’s monolithic approach.
+
+5.Modern developer experience: ASP.NET Core offers cross-platform development (Windows, macOS, Linux), a streamlined CLI, and integration with tools like Visual Studio Code. Features like dependency injection and Razor Pages simplify coding compared to ASP.NET.
+
+6.Advanced tooling: ASP.NET Core includes modern tools like Hot Reload, Docker integration, and cloud-native debugging. The SDK and runtime updates are more frequent and lightweight compared to ASP.NET’s older toolchain.
+
+7.Active support and updates: ASP.NET Core (part of .NET 5/6/7+) receives regular updates and long-term support, whereas legacy ASP.NET on .NET Framework is in maintenance mode with limited future development.
+
+Panel
+------
+Panel is a tool in webform to group multiple controls together and provide a single interface for the user to interact with. It is used to create a more organized and intuitive user interface. Panels can be nested to create complex layouts and provide a better user experience. Panels can be added to a webform using the panel designer or programmatically using the Panel class.
+
+DropDownList
+-------------
+DropDownList is a control in webform that allows the user to select a value from a list of options. It is used to provide a list of choices to the user and to restrict the user to select only one option. The DropDownList control can be added to a webform using the dropdownlist designer or programmatically using the DropDownList class.
+If you need to catch the event when the dropdownlist is changed, you can use the SelectedIndexChanged event.You can automatically create a function if you doubleclick on the dropdownlist in the designer.
+Inside the dropdownlist you can add items using the ListItem class. You can set the text and value of the item.
+It should be a dictionary with key and value pairs.
+If you want to perform this type of operation you must set the AutoPostBack property to true.
+
+RadioButton
+-----------
+Radio button is a control in webform that allows the user to select only one option from a set of options. It is used to provide a set of options to the user and to restrict the user to select only one option. The RadioButton control can be added to a webform using the radiobutton designer or programmatically using the RadioButton class.
+To group multiple radio buttons together you can use the GroupName property. Mention the group name as same for multiple related radio buttons. We need to check for values individually to get the selected radio button.
+
+RadioButtonList
+---------------
+RadioButtonList is a control in webform that allows the user to group multiple radio buttons together and select only one option from a set of options. It is used to provide a set of options to the user and to restrict the user to select only one option. The RadioButtonList control can be added to a webform using the radiobuttonlist designer or programmatically using the RadioButtonList class.
+RadioButtonList is similar to RadioButton control but it allows grouping of radio buttons. We can add radio buttons to the RadioButtonList control using the RadioButton class.
+We can easily access the clicked radio button using the SelectedValue property.
+If we need to catch the event when the radio button is changed, we can use the SelectedIndexChanged event.
+If we want to perform this type of operation we must set the AutoPostBack property to true.
+
+The !IsPostBack property is used to check if the control is being loaded for the first time or is being loaded after a postback. If it is being loaded for the first time, we can set the default value of the control using the SelectedValue property.
+
+CheckBox
+--------
+CheckBox is a control in webform that allows the user to select or deselect a value. It is used to provide a set of options to the user and to allow the user to select multiple options. The CheckBox control can be added to a webform using the checkbox designer or programmatically using the CheckBox class.
+
+CheckBoxList
+------------
+CheckBoxList is a control in webform that allows the user to group multiple checkboxes together and select multiple options. It is used to provide a set of options to the user and to allow the user to select multiple options. The CheckBoxList control can be added to a webform using the checkboxlist designer or programmatically using the CheckBoxList class.
+
+The CheckBoxList control is similar to the RadioButtonList control but it allows grouping of checkboxes. We can add checkboxes to the CheckBoxList control using the CheckBox class.
+
+The SelectedValue property is used to get the selected values of the checkboxes.
+
+We need a datastructure like a List to store the selected values.
+
+If we need to catch the event when the checkbox is changed, we can use the CheckedChanged event.
+
+If we want to perform this type of operation we must set the AutoPostBack property to true.
+
+The !IsPostBack property is used to check if the control is being loaded for the first time or is being loaded after a postback. If it is being loaded for the first time, we can set the default value of the control using the SelectedValue property.
+
+
+Navigation
+----------
+To navigate from a webform to another webform, we use the Response.Redirect method. It takes the URL of the webform as a parameter.
+
+To navigate to the same webform, we can use the Response.Redirect method without any parameter.
+
+eg: Response.Redirect("Default.aspx");
+
+To pass data to a page:
+            string userName = TxtBoxUserName.Text;
+            string userPassword = TxtBoxPassword.Text;
+
+            Response.Redirect("ValuePassingTo.aspx?n1=" + userName + "&n2=" + userPassword);
+
+To accept the data inside the Page_Load method:
+ string userName = Request.QueryString["n1"];
+ string password = Request.QueryString["n2"];
+
+ Label1.Text = "User name is : " + userName + "<br/>" + "Password is : " + password;
+
+ The disadvantage is that the data is visible in the URL.
+ Also we need to pass the data to every page that we want to access.
+
+ The alternative is to use Session variables.
+ To create session variables, we can use the Session class.
+ Session["variableName"] = "value";
+
+ To retrieve the value of the session variable, we can use the Session class.
+ string value = Session["variableName"].ToString();
+ The advantage of using session variables is that the data is not visible in the URL.
+ We can use the same variable name in every page that we want to access.
+
+
+ ADO.net
+ ========
+ADO.net is a set of managed classes that provide a way to access data from a variety of data sources, including relational databases, OLE DB, and XML. It is used to connect to a database and execute SQL queries.
+
+Since database connections and operations are common for many webforms we have to create 
+The main classes in ADO.net are:
+
+SQLConnection: Used to connect to a database.
+syntax: 
+SQLConnection conn = new SQLConnection("Data Source=myServerAddress;Initial Catalog=myDataBase;Integrated Security=True");
+
+ExecuteNonQuery: Used to execute a non-query SQL statement.(INSERT, UPDATE, DELETE)
+syntax: 
+int result = conn.ExecuteNonQuery("INSERT INTO myTable (column1, column2) VALUES ('value1', 'value2')");
+Alternatively we can create a SQLCommand object and set the command text and connection.
+syntax:
+SqlCommand cmd = new SQLCommand();
+cmd.CommandText = "INSERT INTO myTable (column1, column2) VALUES (@value1, @value2)";
+cmd.Parameters.AddWithValue("@value1", "value1");
+
+
+ExecuteReader: Used to execute a query SQL statement and return the result set.
+syntax: 
+SQLCommand cmd = new SQLCommand("SELECT * FROM myTable", conn);
+SQLDataReader reader = cmd.ExecuteReader();
+
+We can check if a connection is open using the sqlConnectionObject.State. We need to check is against 
+System.Data.ConnectionState.Open.
+
+Example of a service class to connect to a database and execute a query:
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Web;
+
+namespace DatabaseConnectionPrograms
+{
+    public class Service
+    {
+        public SqlConnection sqlConnection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Administrator\Documents\Company_431227.mdf;Integrated Security=True;Connect Timeout=30");
+        public void ExecuteQuery(SqlCommand cmd)
+        {
+            cmd.Connection = sqlConnection;
+            if (sqlConnection.State == System.Data.ConnectionState.Open)
+            {
+                sqlConnection.Close();
+            }
+            sqlConnection.Open();
+            cmd.ExecuteNonQuery();
+            sqlConnection.Close();
+        } 
+
+        public SqlDataReader GetResult(SqlCommand cmd) {
+
+            cmd.Connection = sqlConnection;
+            if(sqlConnection.State == System.Data.ConnectionState.Open)
+            {
+                sqlConnection.Close();
+            }
+            sqlConnection.Open();
+            SqlDataReader sqlDataReader = cmd.ExecuteReader();
+            return sqlDataReader;
+        }
+    }
+}
+
+A GridView is used to display the data returned by the query inside the webform.
+Inside the cs file of the webform, we can create an object of the service class.
+Create a command object and set the command text.
+After this create a DataReader object and bind it to the gridview.
+syntax:
+SqlCommand cmd = new SqlCommand();
+cmd.CommandText = "SELECT * FROM table";
+SqlDataReader reader = service.GetResult(cmd);
+GridView1.DataSource = reader;
+GridView1.DataBind();
+
+DataList
+---------
+DataList is a control in webform that is used to display a collection of data. It is used to display a list of items in a webform. The DataList control can be added to a webform using the datalist designer or programmatically using the DataList class.
+The DataList control is similar to the GridView control but it is used to display a collection of data. We can add items to the DataList control using the DataListItem class.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+FileUpload
+----------
+FileUpload is a control in webform that is used to upload files to the server. It is used to allow the user to upload files to the server. The FileUpload control can be added to a webform using the fileupload designer or programmatically using the FileUpload class.
+For placing the uploaded files we need to create a folder in the server.
+
+To check if the FileUpload field has a file we can use the HasFile property.
+To get the name of the uploaded file we can use the FileName property.
+We can create a path on the server by Server.MapPath method and the file name.
+
+To save the uploaded file on the server, we can use the SaveAs method of the FileUpload control.
+
+eg:
+ if (FileUpload1.HasFile)
+ {
+     string fileName = FileUpload1.FileName;
+     string path = Server.MapPath("~/uploads/" + fileName);
+     FileUpload1.SaveAs(path);
+     Label1.Text = "File Upload Success!!!";
+ }
+ else
+ {
+     Label1.Text = "Please select a file to upload!";
+ }
+
+ Calender
+ --------
+ Calender is a control in webform that is used to select a date. It is used to allow the user to select a date. The Calender control can be added to a webform using the calender designer or programmatically using the Calender class.
+ Calender control can be used to select date,time from the calender.
+ We can Listen to the SelectedDateChanged event to get the selected date. Or we can use the SelectedDate property to get the selected date.
+ We need to get the SelectedDate property from the Calender control and convert it into string
+ This will have the date and time. We need to split the string with '<space>' to get the date and time.
+
+ The 0th index of the string array will have the date and the 1st index will have the time.
+ eg:
+ string datetime = Calendar1.SelectedDate.ToString();
+string[] dateTimeArray = datetime.Split(' ');
+Label1.Text = dateTimeArray[0];
+
+The time will always be 00:00:00.0000000.
+
+Image
+-----
+Just to view an image on the screen. If you are using an image within your system you must use the 
+~/ to specify the path to the image. Otherwise the image will not be displayed.
+For images in the internet it is not a problem to use the full URL.
+
+Multiview
+---------
+Multiview is a control in webform that is used to display multiple views of data. It is used to display multiple views of data in a webform. The Multiview control can be added to a webform using the multiview designer or programmatically using the Multiview class.
+We can add muliple views to the Multiview control. A view is a screen in the webform. We can use the ViewState property to store the data for each view.
+
+Multiview let's us set the view index which can change the view inside the multiview. We can set the  view using
+MultiView.ActiveViewIndex 
+indexing starts from 0.
+
+Multiple views can exist inside a multi view. When we are switching between views the page url doesnot change.
+
+PlaceHolder
+------------
+Used to dynamically add controls to a webform. Without using placeholders we used to create controls and set the visibility to False. We can avoid this by using the placeholder.
+We don't have to place the controls statically in this.
+To create tools we need to create object of the control globally in the cs file and make it public.
+
+We can add controls to the placeholder using the Add() function.
+eg:
+PlaceHolder1.Add(new TextBox());
+
+If we want to remove a control from the placeholder we can use the Remove() function.
+eg:
+PlaceHolder1.Remove(TextBox1);
+
+If we want to clear all the controls from the placeholder we can use the Clear() function.
+
+eg:
+PlaceHolder1.Clear();

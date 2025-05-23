@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ArjunTraining\\API_Example\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2497FD-60A7-4EA8-A576-7152AAB87570}|DataAccess\\DataAccess.csproj|d:\\arjuntraining\\api_example\\dataaccess\\repository\\employeerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2497FD-60A7-4EA8-A576-7152AAB87570}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\repository\\employeerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781AFD8B-0AE9-43FB-AFD3-6372E7BAF01B}|Business\\Business.csproj|d:\\arjuntraining\\api_example\\business\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781AFD8B-0AE9-43FB-AFD3-6372E7BAF01B}|Business\\Business.csproj|solutionrelative:business\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBA7BF4-DA98-46B4-BDC9-7FBF2D61EED2}|API_Example\\API_Example.csproj|d:\\arjuntraining\\api_example\\api_example\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBA7BF4-DA98-46B4-BDC9-7FBF2D61EED2}|API_Example\\API_Example.csproj|solutionrelative:api_example\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBA7BF4-DA98-46B4-BDC9-7FBF2D61EED2}|API_Example\\API_Example.csproj|d:\\arjuntraining\\api_example\\api_example\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6BBA7BF4-DA98-46B4-BDC9-7FBF2D61EED2}|API_Example\\API_Example.csproj|solutionrelative:api_example\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2497FD-60A7-4EA8-A576-7152AAB87570}|DataAccess\\DataAccess.csproj|d:\\arjuntraining\\api_example\\dataaccess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2497FD-60A7-4EA8-A576-7152AAB87570}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2497FD-60A7-4EA8-A576-7152AAB87570}|DataAccess\\DataAccess.csproj|d:\\arjuntraining\\api_example\\dataaccess\\models\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2497FD-60A7-4EA8-A576-7152AAB87570}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\models\\employeemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BBA7BF4-DA98-46B4-BDC9-7FBF2D61EED2}|API_Example\\API_Example.csproj|d:\\arjuntraining\\api_example\\api_example\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6BBA7BF4-DA98-46B4-BDC9-7FBF2D61EED2}|API_Example\\API_Example.csproj|solutionrelative:api_example\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF2497FD-60A7-4EA8-A576-7152AAB87570}|DataAccess\\DataAccess.csproj|d:\\arjuntraining\\api_example\\dataaccess\\context\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF2497FD-60A7-4EA8-A576-7152AAB87570}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\context\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{781AFD8B-0AE9-43FB-AFD3-6372E7BAF01B}|Business\\Business.csproj|d:\\arjuntraining\\api_example\\business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{781AFD8B-0AE9-43FB-AFD3-6372E7BAF01B}|Business\\Business.csproj|solutionrelative:business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\ArjunTraining\\API_Example\\API_Example\\appsettings.json",
+              "RelativeDocumentMoniker": "API_Example\\appsettings.json",
+              "ToolTip": "D:\\ArjunTraining\\API_Example\\API_Example\\appsettings.json",
+              "RelativeToolTip": "API_Example\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-05T05:19:23.361Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeModel.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\API_Example\\DataAccess\\Models\\EmployeeModel.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Models\\EmployeeModel.cs",
+              "ToolTip": "D:\\ArjunTraining\\API_Example\\DataAccess\\Models\\EmployeeModel.cs",
+              "RelativeToolTip": "DataAccess\\Models\\EmployeeModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T04:27:30.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\API_Example\\DataAccess\\Context\\DataContext.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Context\\DataContext.cs",
+              "ToolTip": "D:\\ArjunTraining\\API_Example\\DataAccess\\Context\\DataContext.cs",
+              "RelativeToolTip": "DataAccess\\Context\\DataContext.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T04:27:23.31Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\API_Example\\API_Example\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "API_Example\\Controllers\\EmployeeController.cs",
+              "ToolTip": "D:\\ArjunTraining\\API_Example\\API_Example\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "API_Example\\Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:51:49.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\API_Example\\API_Example\\Program.cs",
+              "RelativeDocumentMoniker": "API_Example\\Program.cs",
+              "ToolTip": "D:\\ArjunTraining\\API_Example\\API_Example\\Program.cs",
+              "RelativeToolTip": "API_Example\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:43:39.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeRepo.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\API_Example\\DataAccess\\Repository\\EmployeeRepo.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Repository\\EmployeeRepo.cs",
+              "ToolTip": "D:\\ArjunTraining\\API_Example\\DataAccess\\Repository\\EmployeeRepo.cs",
+              "RelativeToolTip": "DataAccess\\Repository\\EmployeeRepo.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwB0AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:29:20.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\API_Example\\Business\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\EmployeeService.cs",
+              "ToolTip": "D:\\ArjunTraining\\API_Example\\Business\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "Business\\Services\\EmployeeService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwA0AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:28:56.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\API_Example\\DataAccess\\Class1.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Class1.cs",
+              "ToolTip": "D:\\ArjunTraining\\API_Example\\DataAccess\\Class1.cs",
+              "RelativeToolTip": "DataAccess\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:28:15.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\ArjunTraining\\API_Example\\Business\\Class1.cs",
+              "RelativeDocumentMoniker": "Business\\Class1.cs",
+              "ToolTip": "D:\\ArjunTraining\\API_Example\\Business\\Class1.cs",
+              "RelativeToolTip": "Business\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-03T04:27:49.953Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
